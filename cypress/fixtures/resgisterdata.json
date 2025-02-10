@@ -1,7 +1,7 @@
 {
     "firstName": "Test",
     "lastName":"QA",
-    "email":"cypress@qatest.com",
+    "email":"test@qa123.com",
     "telephone":"127543",
-    "password":"cypress123"
+    "password":"test123"
 }
