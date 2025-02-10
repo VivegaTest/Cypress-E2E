@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4        
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
@@ -13,6 +13,11 @@ jobs:
         # Add below step if require to trigger unqiue tcs
         with:
           command: npm run test:addToCart
+      - name: cypress test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome HTML report - AddToCart
+          path: cypress/reports/html
 
 
   Register-Flow-run:
@@ -27,3 +32,8 @@ jobs:
         # Add below step if require to trigger unqiue tcs
         with:
           command: npm run test:registerFlow        
+      - name: cypress test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome HTML report -RegisterFlow
+          path: cypress/reports/html    
