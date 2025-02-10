@@ -25,5 +25,5 @@ jobs:
           SLACK_ICON: https://github.com/rtCamp.png?size=48
           SLACK_MESSAGE: 'Test Automation Report https://github.com/VivegaTest/Cypress-E2E/actions/runs/${{github.run_id}}'
           SLACK_TITLE: Cypress Web Test
-          # Add slack channel name -> Integration> App Name > Install WebHook > click Add to Slack > add the slack link in Github
+          # Add slack channel name -> Integration> App Name > Install WebHook > click Add to Slack > add the slack link in Github :
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
