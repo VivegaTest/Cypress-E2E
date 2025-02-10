@@ -13,6 +13,7 @@ describe('test automation',()=>{
         registerObj.enterEmail(registerdata.email);
         registerObj.enterTelephone(registerdata.telephone);
         registerObj.enterPassword(registerdata.password);
+        cy.get('input[type="radio"]').eq(1).check()
         registerObj.selectCheckBox();
         registerObj.clickOnContinue();
 
