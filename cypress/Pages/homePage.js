@@ -5,7 +5,7 @@ webLocators = {
 
     search_input: '.form-control.input-lg',
     click_search: '.input-group-btn > .btn > .fa',
-    product: 'img[title="MacBook"]',
+    product: 'img[title=""]',
     addtocart: 'Add to Cart',
     successMessages: 'div.alert.alert-success.alert-dismissible'
 }

@@ -33,6 +33,7 @@ jobs:
         with:
           command: npm run test:registerFlow        
       - name: cypress test report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: Mochawesome HTML report -RegisterFlow
