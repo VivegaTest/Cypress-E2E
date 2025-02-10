@@ -1,4 +1,4 @@
-name: Sanity End-to-end tests
+name: Browser build End-to-end tests
 on: push
 jobs:
   cypress-run:
@@ -9,7 +9,6 @@ jobs:
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v6
-        # Add below step if require to trigger unqiue tcs
-        # with:
-        #   command: npm run test:addToCart
+        uses: cypress-io/github-action@v6  
+        with:
+          browser: firefox
